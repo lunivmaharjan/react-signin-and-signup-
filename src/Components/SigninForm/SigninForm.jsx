@@ -8,6 +8,4 @@ const SigninForm = () => {
     </div>
   )
 }
-import './SigninForm.css'
-
 export default SigninForm
