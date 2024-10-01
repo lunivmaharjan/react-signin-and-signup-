@@ -6,11 +6,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Routers>
-          <Route path='/'element={<SignupForm/>}>
-            <Route path="/signin" element={<SigninForm/>} />
-            </Route>            
-        </Routers>
+        <Routes>
+            <Route path="/signin" element={<SigninForm/>} />x            
+        </Routes>
       </Router>
       <SigninForm/>
     </div>
