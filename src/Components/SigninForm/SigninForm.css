@@ -1,36 +1,31 @@
 .wrapper{
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(140deg, #43BC45,#A8E8A1);
-    border-radius: 40px;
+width: 400px;
+height: 300px;
+background: greenyellow;
+color: #fff;
+border-radius: 20px;
 }
 
 .wrapper h1{
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
-    color: white;
+    color: #fff;
 }
 
 .wrapper .input-box{
-    /* position: relative; */
-    display: flex;  
-    justify-content: space-around;
-    align-items: center;
+    display:flex;
     width: 100%;
     height: 20px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .input-box input{
-background: transparent;
-text-align: left;
-border-radius: 35px;
-outline: none;
-outline-color: #fff;
-color: #fff;
-font-size: 15px;
-padding: 15px 40px 20px 10px;
-}
-
-.input-box input::placeholder{
-    color: #fff;
+    /* width: 100%; */
+    /* height: 100%; */
+    background: transparent;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #000;
+    outline-color: #fff;
 }
