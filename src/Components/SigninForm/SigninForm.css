@@ -1,4 +1,36 @@
 .wrapper{
     width: 400px;
-    height: 100px;
+    height: 400px;
+    background: linear-gradient(140deg, #43BC45,#A8E8A1);
+    border-radius: 40px;
+}
+
+.wrapper h1{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.wrapper .input-box{
+    /* position: relative; */
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+}
+
+.input-box input{
+background: transparent;
+text-align: left;
+border-radius: 35px;
+outline: none;
+outline-color: #fff;
+color: #fff;
+font-size: 15px;
+padding: 15px 40px 20px 10px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
 }
