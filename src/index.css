@@ -1,19 +1,121 @@
-body{
-  margin: 0;
-  width: 100%;
- 
-    font-family: "Poppins", system-ui;
-    font-weight: 100;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    width: 100%;
+   
+      font-family: "Poppins", system-ui;
+      font-weight: 100;
+      font-style: normal;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url('./Components/Assets/ops.jpg'); */
+    background: radial-gradient(circle, #2E8A31, #1A5E1F) !important;
+    background-size: cover;
+    background-position: center; 
+}
+
+.wrapper{
+  width: 450px;
+  border-radius: 70px ;
+  padding: 30px 20px;
+  background: #43bc45;
+  /* border: 2px solid rgba(255, 255, 255, .2); */
   display: flex;
+  backdrop-filter: blur(30px);
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  /* background-image: url('./Components/Assets/ops.jpg'); */
-  background: radial-gradient(circle, #2E8A31, #1A5E1F) !important;
-  background-size: cover;
-  background-position: center; 
+  min-height: 70vh;
+}
+
+.wrapper h1{
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .input-box{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 120%;
+  height: 40px;
+  margin: 40px 0;
+}
+
+.input-box input{
+  width: 120%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid #3e3737;
+  outline: none;
+  border-radius: 30px;
+  font-size: 15px;
+  color: #fff;
+  padding: 6px 45px 6px 6px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box .icon{
+  position: absolute;
+  right: 27.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.wrapper button{
+  width: 100%;
+  height: 45px;
+  background:#fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #43bc45;
+  font-weight: 700;
+}
+
+
+.wrapper .register-link{
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a{
+color: #fff;
+text-decoration: none;
+font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.wrapper-stop{
+  margin: 100px;
+  padding: 0;
+}
+
+.wrapper .remember-forgot{
+  display: flex;
+  justify-content: space-between;
 }
