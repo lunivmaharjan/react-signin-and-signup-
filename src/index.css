@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border- box; */
+  color: white;
+  text-align: center;
 }
 
 
-body{
+  body{
     margin: 0;
     width: 100%;
    
@@ -26,15 +27,49 @@ body{
     background-size: cover;
     background-position: center; 
 }
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 80px;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  padding-top: 40px;   
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.centerScreen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%; /* Full width */
+  max-width: 800px; /* Maximum width */
+  padding: 20px; /* Inner spacing */
+  margin: auto;
+}
 
 .wrapper{
-  width: 450px;
-  border-radius: 70px ;
-  padding: 30px 20px;
-  background: #43bc45;
-  /* border: 2px solid rgba(255, 255, 255, .2); */
+  width: 600px;
+  height: 130px;
+  background:  #c7c5c5;
+  border-radius:20px ;
+  padding: 10px 10px;
   display: flex;
-  backdrop-filter: blur(30px);
   justify-content: center;
   align-items: center;
   min-height: 70vh;
@@ -43,14 +78,10 @@ body{
 .wrapper h1{
   font-size: 40px;
   text-align: center;
-  color: #fff;
 }
 
 .wrapper .input-box{
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   width: 120%;
   height: 40px;
   margin: 40px 0;
@@ -60,24 +91,45 @@ body{
   width: 120%;
   height: 100%;
   background: transparent;
-  border: 1px solid #3e3737;
+  border: 2px solid #3e3737;
   outline: none;
-  border-radius: 30px;
+  border-radius: 1200px;
   font-size: 15px;
-  color: #fff;
-  padding: 6px 45px 6px 6px;
+  color: #000;
+  padding: 5px 5px 5px 5px;
 }
 
 .input-box input::placeholder {
-  color: #fff;
+  color: #000;
 }
 
 .input-box .icon{
   position: absolute;
-  right: 27.5px;
-  top: 50%;
+  right: 20px;
+  top: 49%;
   transform: translateY(-50%);
   font-size: 16px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -25px 0 50px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 8px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
 }
 
 .wrapper button{
@@ -93,7 +145,6 @@ body{
   font-weight: 700;
 }
 
-
 .wrapper .register-link{
   font-size: 14px;
   text-align: center;
@@ -107,15 +158,10 @@ font-weight: 600;
 }
 
 .register-link p a:hover {
-  text-decoration: underline;
+  text-decoration: underline;
 }
 
 .wrapper-stop{
   margin: 100px;
   padding: 0;
-}
-
-.wrapper .remember-forgot{
-  display: flex;
-  justify-content: space-between;
 }
