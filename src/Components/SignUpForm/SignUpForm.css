@@ -1,0 +1,76 @@
+.abc{
+    width: 400px;
+    height: 100px !important;
+    background: radial-gradient(circle, #2E8A31, #1A5E1F) !important;
+    border-radius:30px ;
+}
+
+.abc h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.abc .inputbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    outline-color: #fff;
+}
+
+.inputbox input{
+    width: 120%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #3e3737;
+    outline: none;
+    border-radius: 1200px;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+}
+
+.inputbox ::placeholder{
+    color: #fff;
+}
+
+.abc button{
+    width: 100%;
+    height: 45px;
+    background:#fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #43bc45;
+    font-weight: 700;
+}
+
+.abc .register-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.input-box{
+    color: #fff;
+}
